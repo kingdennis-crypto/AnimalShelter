@@ -5,3 +5,6 @@ def homePage(request):
 
 def aboutPage(request):
   return render(request, 'animals/about.html')
+
+def animalsPage(request):
+  return render(request, 'animals/animals.html')
