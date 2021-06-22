@@ -12,3 +12,9 @@ def animalsPage(request):
 
   context = {'animals':animals}
   return render(request, 'animals/animals.html', context)
+
+def animalProfile(request, id):
+  object = animal.objects.get(id=id)
+  
+  context = {'animal':object}
+  return render(request, 'animals/animalProfile.html', context)
